@@ -250,3 +250,12 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+# softival
+coverage/
+typings/
+
+npm-debug.log*
+
+.DS_Store
+Thumbs.db

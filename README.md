@@ -1,2 +1,2 @@
 # Typescript-Playground
-Typescript boilerplate with testing
+Typescript boilerplate with Karma + Jasmine testing
