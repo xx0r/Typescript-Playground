@@ -1,0 +1,11 @@
+{
+  "port": 8800,
+  "files":
+  [
+    "./src/*/.{html,htm,css,js,ts,map}"
+  ],
+  "server":
+  {
+    "baseDir": "./dist"
+  }
+}

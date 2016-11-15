@@ -37,7 +37,18 @@ module.exports = function (config)
         // test results reporter to use
         // possible values: "dots", "progress"
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ["progress", "karma-typescript"],
+        // reporters: ["progress", "karma-typescript", "spec"],
+        reporters: ["spec"],
+
+
+        specReporter: {
+            maxLogLines: 5,         // limit number of lines logged per test 
+            suppressErrorSummary: true,  // do not print error summary 
+            suppressFailed: false,  // do not print information about failed tests 
+            suppressPassed: false,  // do not print information about passed tests 
+            suppressSkipped: true,  // do not print information about skipped tests 
+            showSpecTiming: false // print the time elapsed for each spec 
+        },
        
         // default html coverage report + a summary on the console
         karmaTypescriptConfig:
