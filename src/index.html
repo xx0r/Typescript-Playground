@@ -7,13 +7,29 @@
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.27/system.js"></script>
     <script>
-  // set our baseURL reference path
-  SystemJS.config({
-      defaultJSExtensions: true
-  });
+        // set our baseURL reference path
+        SystemJS.config({
+            defaultJSExtensions: true,
+            packages:
+           {
+               "typescript-node-module":
+               {
+                   main: "dist/main.js"
+               }
+           },
+            map:
+            {
+                "typescript-node-module": "npm:typescript-node-module"
+            },
 
-  // loads /js/main.js
-  SystemJS.import('main');
+            paths:
+            {
+                "npm:*": "/node_modules/*"
+            }
+
+        });
+
+        SystemJS.import('main');
     </script>
 </body>
 </html>
