@@ -1,5 +1,5 @@
 "use strict";
-var array_service_1 = require("./services/array.service");
+var array_service_1 = require("./generics/array.service");
 var typescript_node_module_1 = require("typescript-node-module");
 (function (global) {
     var controller = new typescript_node_module_1.SampleController();

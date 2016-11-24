@@ -8,7 +8,7 @@ Typescript sandbox boilerplate utilizing:
 
 ## Featuring
 * [Generics](./src/generics); Array flattening and sorting using basic functions 
-* Example of referencing a [typescript node module](https://github.com/xx0r/typescript-node-module) from private repostiory (github)
+* Example of referencing a [typescript node module](https://github.com/xx0r/typescript-node-module) from a private repostiory (github)
 
 
 

@@ -28,6 +28,16 @@ var ArrayService = (function () {
         }
         return result;
     };
+    ArrayService.prototype.sortByNumber = function (array, propertySelectorFn, ascending) {
+        if (ascending === void 0) { ascending = true; }
+        return array && array.sort(function (a, b) {
+            var propertyA = propertySelectorFn(a);
+            var propertyB = propertySelectorFn(b);
+            var diff = propertyA - propertyB;
+            var comparison = isFinite(diff) ? diff : isFinite(propertyA) ? -1 : 1;
+            return ascending ? comparison : -comparison;
+        });
+    };
     return ArrayService;
 }());
 exports.ArrayService = ArrayService;
