@@ -1,6 +1,4 @@
-﻿/// <reference path="../typings/index.d.ts" />
-
-import { SampleController } from "typescript-node-module";
+﻿import { SampleController } from "typescript-node-module";
 
 describe("web test suite",
     () =>

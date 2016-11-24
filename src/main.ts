@@ -1,4 +1,4 @@
-﻿import { ArrayService } from "./services/array.service";
+﻿import { ArrayService } from "./generics/array.service";
 import { SampleController } from "typescript-node-module";
 
 ((global: any) =>

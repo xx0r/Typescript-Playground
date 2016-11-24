@@ -1,7 +1,7 @@
 "use strict";
 var typescript_node_module_1 = require("typescript-node-module");
 describe("web test suite", function () {
-    it("should resolve external dependency", function () {
+    it("should resolve external node module", function () {
         expect(typescript_node_module_1.SampleController)
             .toBeDefined();
     });
